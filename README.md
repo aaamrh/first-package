@@ -173,4 +173,5 @@ Automating Version Management
 自动日志管理
 
 - 添加 infile 字段到 .release-it.json 的 plugins 中, 它规定了 日志文件名字
-
+- 我们增加一个 feature
+- npm run test => npm run build => git add commit => 
