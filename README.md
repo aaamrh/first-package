@@ -118,4 +118,7 @@ Creating LICENSE
 publish to npm
 
 - 在 package.json 中添加 description, keywords, author, homepage
-
+- 声明你想发布的目录 `"files": ["./dist"]`, "main" 字段中的文件, package.json README LICENSE 默认会被包含进去
+- `npm publish --dry-run` ，npm 会执行发布包的所有步骤，但不会实际将包上传到 npm , 可以帮助你确保你的 package.json files 配置是否正确, 是否有遗漏; 帮助你预览版本号, 包名等重要信息;
+- `npm run test`
+- `npm run build`

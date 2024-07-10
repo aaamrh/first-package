@@ -5,6 +5,9 @@
   "module": "./dist/esm/TweetButton.js",
   "types": "./dist/esm/TweetButton.d.ts",
   "description": "A mini package to send thank you tweets",
+  "files": [
+    "./dist"
+  ],
   "author": {
     "name": "Ryan",
     "email": "aaamrh@163.com",
@@ -28,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aaamrh/first-package.git"
+    "url": "git+https://github.com/aaamrh/first-package.git"
   },
   "bugs": {
     "url": "https://github.com/aaamrh/first-package/issues",
