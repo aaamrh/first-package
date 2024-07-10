@@ -34,3 +34,12 @@ Add the Commitlint GitHub Action to your team’s workflow.
 - 创建文件 `mkdir .github`
 - `mkdir .github/workflows`
 - `touch .github/workflows/commitlint.yml`
+
+------
+
+Styling React Components
+
+- index.css 添加样式，并再 TweetButton.tsx 中添加 className
+- 现在 jest 测试是会报错, 因为 jest 默认不能处理 css 文件
+- `npm i -D jest-transform-css` 可以将 stylesheets 导入到 jest 的 dom 环境中
+- 在 jest.config.ts 中添加 `"^.+\\.css$": "jest-transform-css"`
