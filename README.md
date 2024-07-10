@@ -213,4 +213,5 @@ github 自动发布
 - 创建 .env , .gitignore 忽略 .env
 - `npm i -D dotenv-cli`
 - 修改 package.json scripts release `"release": "dotenv release-it --"`
-- git add commit 
+- git add commit
+- 修改我们的组件  重复上述流程 test -> build -> ...
