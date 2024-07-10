@@ -84,3 +84,7 @@ Compiling React to JavaScript
 "main": "./dist/cjs/TweetButton.js",
 "module": "./dist/esm/TweetButton.js",
 ```
+
+------
+
+指定包含程序包的类型定义的声明文件也是一个很好的做法 `"types": "./dist/esm/TweetButton.d.ts"`
