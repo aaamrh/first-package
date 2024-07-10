@@ -19,6 +19,7 @@ export function TweetButton(props: TweetButtonPropsType) {
         Send a thank you tweet{" "}
         {props?.bestNPMPackage && `: ${props.bestNPMPackage}`}
       </a>
+      🎉
     </section>
   );
 }
