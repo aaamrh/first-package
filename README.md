@@ -154,7 +154,7 @@ Automating Version Management
 
 - `npm i -D release-it`
 - package.json  scripts 增加·`"release": "release-it"`
-- git add commit 
+- git add commit
 - `npm run release`
 
 ------
@@ -162,3 +162,7 @@ Automating Version Management
 覆盖 release-it 的默认配置
 
 - 创建 .release-it.json 并配置, 也可以写在 package.json 中
+
+给 release-it 提供一个推荐版本
+
+- `npm i -D @release-it/conventional-changelog` , 配置到 .release-it.json 中
