@@ -23,4 +23,14 @@
 
 - `npm i -D @commitlint/config-conventional @commitlint/cli`
 - 创建 commitlint.config.ts
-- `npm i -D husky`
+- `npm i -D husky` 配置 hooks
+
+------
+
+Git Action
+
+Add the Commitlint GitHub Action to your team’s workflow.
+
+- 创建文件 `mkdir .github`
+- `mkdir .github/workflows`
+- `touch .github/workflows/commitlint.yml`
