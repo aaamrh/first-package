@@ -143,3 +143,7 @@ Updating Package’s Versions
 - `npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]`
 - 修改下组件标签 `npm run build`
 - `npm version patch`
+- `git push -u origin main`
+- `npm publish` 版本 v1.0.0 => v1.0.1
+- 增加一个 feature => `npm run build` => git add commit => `npm version minor` => git push
+
