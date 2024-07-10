@@ -193,7 +193,24 @@ Automating Version Management
   ]
 
  ```
+
 可以在 .release-it.json 中覆盖配置
 
 - 继续修改一点组件
 - 重复上述流程 test -> build -> ...
+
+------
+
+github 自动发布
+
+- github 生成一个 access token
+- 创建 github 环境变量  GitHub 项目的 settings => Secrets and variables => Actions => New repository secret => 填写 access token, 还有名:  RELEASE_IT_GITHUB_TOKEN
+- 配置 .release-it.json
+  - "github": {
+    "release": true,
+    "tokenRef": "RELEASE_IT_GITHUB_TOKEN"
+  },
+- 创建 .env , .gitignore 忽略 .env
+- `npm i -D dotenv-cli`
+- 修改 package.json scripts release `"release": "dotenv release-it --"`
+- git add commit 
