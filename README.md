@@ -122,3 +122,10 @@ publish to npm
 - `npm publish --dry-run` ，npm 会执行发布包的所有步骤，但不会实际将包上传到 npm , 可以帮助你确保你的 package.json files 配置是否正确, 是否有遗漏; 帮助你预览版本号, 包名等重要信息;
 - `npm run test`
 - `npm run build`
+- `npm login`
+- `npm search pkg-name` 确保名字可以用. 我们可以在名字前加个前缀 `@<username>/first-package` 代表包作为 NPM 用户名的一个作用域的发布。
+- `npm publish` 恭喜, 报错啦 !!!
+  - 如果限定了包的名称, NPM的默认会假设这个有作用域的包是一个私有项目。因此，如果您使用npm publish 发布命令来共享它，就会得到一个错误。因此，要将您的包作为用户名的范围发布，请将——访问=公共标志添加到thenpm发布命令：
+  - `npm publish --access=public` 执行
+  
+

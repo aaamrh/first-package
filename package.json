@@ -1,5 +1,5 @@
 {
-  "name": "first-package",
+  "name": "@aaamrh/first-package",
   "version": "1.0.0",
   "main": "./dist/cjs/TweetButton.js",
   "module": "./dist/esm/TweetButton.js",
