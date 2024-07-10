@@ -43,3 +43,29 @@ Styling React Components
 - 现在 jest 测试是会报错, 因为 jest 默认不能处理 css 文件
 - `npm i -D jest-transform-css` 可以将 stylesheets 导入到 jest 的 dom 环境中
 - 在 jest.config.ts 中添加 `"^.+\\.css$": "jest-transform-css"`
+
+------
+
+Compiling React to JavaScript
+
+```json
+  "build": "rimraf dist && npm run build:esm && npm run build:cjs",
+  "build:esm": "tsc",
+  "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+```
+
+------
+
+将组建移到 src/components 中, 并在 tsconfig.json 中添加相应配置
+
+`"include": ["src/**/*"]` `"exclude": ["src/**/*.test.tsx"]`
+
+ define a script for copying the stylesheet to the dist directory during each build
+
+ ``` json
+  "build": "rimraf dist && npm run build:esm && npm run build:cjs && npm run copy-files",
+  "build:esm": "tsc",
+  "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+  "copy-files": "cp ./src/index.css dist/",
+
+ ```

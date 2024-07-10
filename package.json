@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "build": "rimraf dist && npm run build:esm && npm run build:cjs && npm run copy-files",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "copy-files": "cp ./src/index.css dist/",
+    "test": "jest --config jest.config.ts",
     "prepare": "husky"
   },
   "repository": {
