@@ -140,6 +140,6 @@ publish to npm
 
 Updating Package’s Versions
 
-- `npm version update-type`
+- `npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]`
 - 修改下组件标签 `npm run build`
-- 
+- `npm version patch`
