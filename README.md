@@ -157,3 +157,8 @@ Automating Version Management
 - git add commit 
 - `npm run release`
 
+------
+
+覆盖 release-it 的默认配置
+
+- 创建 .release-it.json 并配置, 也可以写在 package.json 中
