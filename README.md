@@ -69,3 +69,18 @@ Compiling React to JavaScript
   "copy-files": "cp ./src/index.css dist/",
 
  ```
+
+------
+
+定义 pkg 的 entry point
+
+现在打包结果有两种格式, 应该使使用软件包的工具意识到它们可以在ES或CommonJS模块之间进行选择。因此，他们可以选择他们支持的一个。
+
+默认情况下，大多数使用软件包的工具都希望在 package.json 的 main 字段中找到一个CommonJS模块
+
+因此，请使用该字段来引用您的CommonJS模块。并将ECMAScript编译添加到该模块属性中。
+
+``` json
+"main": "./dist/cjs/TweetButton.js",
+"module": "./dist/esm/TweetButton.js",
+```
