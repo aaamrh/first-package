@@ -16,10 +16,9 @@ export function TweetButton(props: TweetButtonPropsType) {
   return (
     <section className="tweet-btn-container">
       <a className="tweet-button" href={tweetURL} target="_blank">
-        Send a thank you tweet{" "}
+        💰 Send a thank you tweet{" "}
         {props?.bestNPMPackage && `: ${props.bestNPMPackage}`}
       </a>
-      🛠️⚒️🪧💰
     </section>
   );
 }
