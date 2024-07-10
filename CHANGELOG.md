@@ -1,5 +1,12 @@
 
 
+## [2.1.0](https://github.com/aaamrh/first-package/compare/v2.0.5...v2.1.0) (2024-07-10)
+
+
+### Features
+
+* 新的样式 ([426298a](https://github.com/aaamrh/first-package/commit/426298a502011156affbb9455dd881f75c5292c9))
+
 ## [2.0.5](https://github.com/aaamrh/first-package/compare/v2.0.4...v2.0.5) (2024-07-10)
 
 ## [2.0.4](https://github.com/aaamrh/first-package/compare/v2.0.2...v2.0.4) (2024-07-10)
