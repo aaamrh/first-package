@@ -1,6 +1,6 @@
 {
   "name": "@aaamrh/first-package",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "./dist/cjs/TweetButton.js",
   "module": "./dist/esm/TweetButton.js",
   "types": "./dist/esm/TweetButton.d.ts",
