@@ -10,3 +10,9 @@
 - `npm i -D ts-jest`, 创建 jest.config.ts , 配置支持 ts 语法
 - `npm i -D ts-node` jest 需要 ts-node 来读取 ts 配置文件
 - `npm i -D jest-environment-jsdom`  jest 默认测试环境是 nodejs, 因此当创建web相关的包的时候需要明确一个类似浏览器环境，安装后在 jest.config.ts 中配置 testEnvironment: 'jsdom'; 然后更新 package.json scripts `test: jest --config jest.config.ts`
+
+------
+
+- 创建 TweetButton.tsx TweetButton.test.tsx, 编写内容
+- `npm run test TweetButton.test.tsx`
+- 
