@@ -88,3 +88,24 @@ Compiling React to JavaScript
 ------
 
 指定包含程序包的类型定义的声明文件也是一个很好的做法 `"types": "./dist/esm/TweetButton.d.ts"`
+
+------
+
+本地测试未发布的包
+
+- `npm link` tells NPM to create a symlink (symbolic link) in your system’s global directory that links to your package.
+
+- 创建 nextjs 项目
+  - `npx create-next-app@latest`
+  - 再创建的额项目下, `npm link package-name`
+    - NPM disconnects the symlink automatically whenever you install or uninstall packages. So, remember to re-run thenpm link package-namecommand after installing or uninstalling any library.
+  - 在 page.tsx 中使用组件 🎉
+  - 再 nextjs 项目下执行 `npm unlink package-name` 会取消link
+  - `npm rm --global package-name` 删除全局的 link
+  - `npm ls --global package-name` 查看是否删除
+
+------
+
+Creating LICENSE
+
+- 创建 LICENSE 文件
