@@ -15,4 +15,12 @@
 
 - 创建 TweetButton.tsx TweetButton.test.tsx, 编写内容
 - `npm run test TweetButton.test.tsx`
-- 
+- git add commit push
+
+------
+
+规范 git 提交
+
+- `npm i -D @commitlint/config-conventional @commitlint/cli`
+- 创建 commitlint.config.ts
+- `npm i -D husky`
