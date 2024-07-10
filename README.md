@@ -128,4 +128,18 @@ publish to npm
   - 如果限定了包的名称, NPM的默认会假设这个有作用域的包是一个私有项目。因此，如果您使用npm publish 发布命令来共享它，就会得到一个错误。因此，要将您的包作为用户名的范围发布，请将——访问=公共标志添加到thenpm发布命令：
   - `npm publish --access=public` 执行
   
+------
 
+测试包的使用
+
+- `npm i @aaamrh/first-package`
+- 本地测试
+- 将测试用的 nextjs 项目提交到 github 上, 部署到 <https://vercel.com/> 上, 后续好测试
+
+------
+
+Updating Package’s Versions
+
+- `npm version update-type`
+- 修改下组件标签 `npm run build`
+- 
