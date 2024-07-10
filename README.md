@@ -174,4 +174,23 @@ Automating Version Management
 
 - 添加 infile 字段到 .release-it.json 的 plugins 中, 它规定了 日志文件名字
 - 我们增加一个 feature
-- npm run test => npm run build => git add commit => 
+- npm run test => npm run build => git add => git commit -m 'feat(tweetbutton)!: 内容' => npm run release
+  - commit 中的 ! 代表 breaking change
+  - 这时候会生成 CHANGELOG.md, 也就是上面的 infile
+- 为什么 CHANGELOG 会忽略一些提交？
+  - 因为 @release-it/conventional-changelog 预制了如下类型选项
+
+ ``` json
+  "types": [
+    {"type": "feat", "section": "Features"},
+    {"type": "fix", "section": "Bug Fixes"},
+    {"type": "chore", "hidden": true},
+    {"type": "docs", "hidden": true},
+    {"type": "style", "hidden": true},
+    {"type": "refactor", "hidden": true},
+    {"type": "perf", "hidden": true},
+    {"type": "test", "hidden": true}
+  ]
+
+ ```
+可以在 .release-it.json 中覆盖
