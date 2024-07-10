@@ -1,5 +1,12 @@
 
 
+## [2.0.1](https://github.com/aaamrh/first-package/compare/v2.0.0...v2.0.1) (2024-07-10)
+
+
+### Bug Fixes
+
+* **tweetbutton:** change send text to post ([3a54ccf](https://github.com/aaamrh/first-package/commit/3a54ccf75be3d89f649e9c7bffca16cc6282be86))
+
 ## [2.0.0](https://github.com/aaamrh/first-package/compare/v1.2.1...v2.0.0) (2024-07-10)
 
 
