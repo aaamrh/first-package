@@ -109,3 +109,13 @@ Compiling React to JavaScript
 Creating LICENSE
 
 - 创建 LICENSE 文件
+
+如果你不申请开源许可，所有为你的项目做出贡献的人都会成为他们作品的独家版权所有者。
+这意味着没有人可以使用、复制、分发或修改他们的贡献, 你也不行
+
+------
+
+publish to npm
+
+- 在 package.json 中添加 description, keywords, author, homepage
+

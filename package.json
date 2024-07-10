@@ -1,10 +1,23 @@
 {
   "name": "first-package",
   "version": "1.0.0",
-  "description": "",
   "main": "./dist/cjs/TweetButton.js",
   "module": "./dist/esm/TweetButton.js",
   "types": "./dist/esm/TweetButton.d.ts",
+  "description": "A mini package to send thank you tweets",
+  "author": {
+    "name": "Ryan",
+    "email": "aaamrh@163.com",
+    "url": "https://github.com/aaamrh/first-package"
+  },
+  "homepage": "https://github.com/aaamrh/first-package#readme",
+  "keywords": [
+    "tweet",
+    "twitter",
+    "button",
+    "thank you",
+    "thanks"
+  ],
   "scripts": {
     "build": "rimraf dist && npm run build:esm && npm run build:cjs && npm run copy-files",
     "build:esm": "tsc",
@@ -21,8 +34,6 @@
     "url": "https://github.com/aaamrh/first-package/issues",
     "email": "aaamrh@163.com"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
