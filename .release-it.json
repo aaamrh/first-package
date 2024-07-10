@@ -10,16 +10,16 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "conventionalcommits",
-      "infile": "CHANGELOG.md",
+      "infile": "CHANGELOG.md", 
       "types": [
-        { "type": "build", "section": "Dependency" },
-        { "type": "chore", "section": "Chores" },
-        { "type": "docs", "section": "Documentation" },
-        { "type": "feat", "section": "New Feature" },
-        { "type": "fix", "section": "Bug Fix" },
-        { "type": "refactor", "section": "Code Refactoring" },
-        { "type": "style", "section": "Styling and Formatting" },
-        { "type": "test", "section": "Code Testing" }
+        { "type": "build", "section": "🪜Dependency" },
+        { "type": "chore", "section": "🐨Chores" },
+        { "type": "docs", "section": "🪧Documentation" },
+        { "type": "feat", "section": "🧩New Feature" },
+        { "type": "fix", "section": "🛠️Bug Fix" },
+        { "type": "refactor", "section": "✨Code Refactoring" },
+        { "type": "style", "section": "🦄Styling and Formatting" },
+        { "type": "test", "section": "🦜Code Testing" }
       ]
     }
   }
