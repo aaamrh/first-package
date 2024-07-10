@@ -22,6 +22,7 @@
     "thanks"
   ],
   "scripts": {
+    "release": "release-it",
     "build": "rimraf dist && npm run build:esm && npm run build:cjs && npm run copy-files",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",

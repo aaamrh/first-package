@@ -145,5 +145,15 @@ Updating Package’s Versions
 - `npm version patch`
 - `git push -u origin main`
 - `npm publish` 版本 v1.0.0 => v1.0.1
-- 增加一个 feature => `npm run build` => git add commit => `npm version minor` => git push
+- 增加一个 feature => `npm run build` => git add commit => `npm version minor` => git push => npm publish
+- `npm version major` 同理
+
+------
+
+Automating Version Management
+
+- `npm i -D release-it`
+- package.json  scripts 增加·`"release": "release-it"`
+- git add commit 
+- `npm run release`
 
