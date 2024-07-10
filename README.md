@@ -166,3 +166,11 @@ Automating Version Management
 给 release-it 提供一个推荐版本
 
 - `npm i -D @release-it/conventional-changelog` , 配置到 .release-it.json 中
+- 会发现已经不会在提示让你选择版本
+
+------
+
+自动日志管理
+
+- 添加 infile 字段到 .release-it.json 的 plugins 中, 它规定了 日志文件名字
+
